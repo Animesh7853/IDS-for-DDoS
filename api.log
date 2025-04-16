@@ -1,0 +1,278 @@
+2025-04-03 01:42:34,355 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-03 01:42:34,644 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-03 01:42:34,651 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-03 01:42:34,651 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-03 02:09:00,370 - network-attack-classifier - INFO - Shutting down application
+2025-04-03 02:09:09,011 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-03 02:09:09,308 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-03 02:09:09,324 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-03 02:09:09,326 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-03 02:11:18,142 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.5355
+2025-04-03 02:31:35,068 - network-attack-classifier - INFO - Prediction: DoS Hulk with confidence 0.3797
+2025-04-03 02:39:28,093 - network-attack-classifier - INFO - Shutting down application
+2025-04-03 02:39:37,659 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-03 02:39:37,931 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-03 02:39:37,950 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-03 02:39:37,950 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-03 02:44:30,992 - network-attack-classifier - INFO - Shutting down application
+2025-04-03 02:44:36,580 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-03 02:44:36,839 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-03 02:44:36,855 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-03 02:44:36,855 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-03 02:45:44,920 - network-attack-classifier - INFO - Shutting down application
+2025-04-03 02:45:49,805 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-03 02:45:49,980 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-03 02:45:49,980 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-03 02:45:49,996 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-03 02:47:07,623 - network-attack-classifier - INFO - Starting attack simulation e7429f23-799f-433b-ab2c-084126ba80e5, requested type: random
+2025-04-03 19:27:39,710 - network-attack-classifier - INFO - Shutting down application
+2025-04-03 19:27:39,742 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-03.csv
+2025-04-15 02:30:24,461 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 02:30:25,781 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 02:30:25,825 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 02:30:25,829 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 02:31:01,538 - network-attack-classifier - INFO - Prediction: DoS Hulk with confidence 0.3797, request_id: 1744664459198--462302567799847590
+2025-04-15 02:31:14,915 - network-attack-classifier - INFO - Starting attack simulation 088bda86-d316-4b60-8ba7-f695eb3c50a5, requested type: random
+2025-04-15 02:44:04,047 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 02:44:04,076 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 02:47:05,034 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 02:47:05,368 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 02:47:05,385 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 02:47:05,385 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 02:50:35,166 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 02:50:43,815 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 02:50:44,114 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 02:50:44,133 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 02:50:44,133 - network-attack-classifier - INFO - Loading scaler from scaler.json
+2025-04-15 02:50:44,133 - network-attack-classifier - ERROR - Error loading model or scaler: 'mean'
+2025-04-15 02:51:31,663 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 02:51:31,945 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 02:51:31,959 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 02:51:31,959 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 02:56:23,049 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 02:56:33,750 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 02:56:34,348 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 02:56:34,371 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 02:56:34,371 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 03:01:23,163 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 03:01:36,191 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 03:01:36,733 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 03:01:36,741 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 03:01:36,741 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 03:03:50,532 - network-attack-classifier - INFO - Loaded 3 historical records from CSV files
+2025-04-15 03:03:50,745 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 03:03:50,786 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 03:04:09,274 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 03:04:09,839 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 03:04:09,857 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 03:04:09,857 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 03:04:09,874 - network-attack-classifier - INFO - Starting attack simulation 149d6418-dab4-4d0d-9d90-8bd3e9a3478a, requested type: random
+2025-04-15 03:08:54,361 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 03:08:54,420 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 03:09:13,541 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 03:09:14,168 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 03:09:14,198 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 03:09:14,199 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 03:13:59,379 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 03:14:09,577 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 03:14:09,912 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 03:14:09,934 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 03:14:09,934 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 03:19:02,084 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 03:25:17,375 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 03:25:17,758 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 03:25:17,778 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 03:25:17,780 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 03:51:57,743 - network-attack-classifier - INFO - Starting attack simulation 4bafbeab-ee61-4fae-b948-b0698e3815f0, requested type: random
+2025-04-15 03:52:33,707 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 03:52:33,707 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 03:52:42,980 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 03:52:43,308 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 03:52:43,326 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 03:52:43,327 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 03:53:08,503 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 03:55:14,508 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 03:55:14,910 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 03:55:14,916 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 03:55:14,916 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 03:55:22,659 - network-attack-classifier - INFO - Loaded 8 historical records from CSV files
+2025-04-15 03:56:31,912 - network-attack-classifier - INFO - Starting attack simulation 9b42bd53-421b-43da-a6ae-ad4ee97681b1, requested type: DoS Hulk
+2025-04-15 03:56:39,880 - network-attack-classifier - INFO - Starting attack simulation 5fa93704-f287-4f96-923d-bc9ecdc96b05, requested type: DoS Hulk
+2025-04-15 03:56:39,978 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 03:56:42,849 - network-attack-classifier - INFO - Loaded 18 historical records from CSV files
+2025-04-15 03:56:44,913 - network-attack-classifier - INFO - Starting attack simulation 8f081e05-1342-4471-a3b5-4e4c9a86a9bf, requested type: DoS Hulk
+2025-04-15 03:56:48,658 - network-attack-classifier - INFO - Starting attack simulation 0057ab32-d6de-4486-96f9-b6d63315a5e9, requested type: DoS Hulk
+2025-04-15 03:56:48,771 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 03:56:52,843 - network-attack-classifier - INFO - Loaded 38 historical records from CSV files
+2025-04-15 03:56:59,766 - network-attack-classifier - ERROR - Error testing model: empty range for randrange() (1, 1, 0)
+2025-04-15 03:56:59,766 - network-attack-classifier - ERROR - Error traceback: Traceback (most recent call last):
+  File "D:\SRM\Project\Execute\IDS\app.py", line 995, in test_model
+    features_dict = generate_attack_features(attack_label)
+  File "D:\SRM\Project\Execute\IDS\app.py", line 851, in generate_attack_features
+    bwd_packets = random.randint(1, int(features['Total Fwd Packets'] * 0.8))
+  File "C:\Program Files\Python310\lib\random.py", line 370, in randint
+    return self.randrange(a, b+1)
+  File "C:\Program Files\Python310\lib\random.py", line 353, in randrange
+    raise ValueError("empty range for randrange() (%d, %d, %d)" % (istart, istop, width))
+ValueError: empty range for randrange() (1, 1, 0)
+
+2025-04-15 03:57:56,515 - network-attack-classifier - INFO - Prediction: DoS Hulk with confidence 0.3797, request_id: 1744669675939-8578745595160064879
+2025-04-15 03:58:13,293 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 03:58:13,293 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.5355, request_id: 1744669693063--5017924070654228055
+2025-04-15 03:58:18,020 - network-attack-classifier - INFO - Loaded 78 historical records from CSV files
+2025-04-15 04:00:02,436 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 04:00:02,456 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 04:00:11,151 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 04:00:11,508 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 04:00:11,531 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 04:00:11,531 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 04:00:11,537 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-15 04:00:57,421 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 04:00:57,427 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 04:01:03,099 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 04:01:03,318 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 04:01:03,336 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 04:01:03,336 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 04:01:03,373 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-15 04:01:03,397 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 04:05:00,694 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 04:05:00,716 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.5355, request_id: 1744670095633--3768421647738877849
+2025-04-15 04:05:01,622 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-15 04:05:01,699 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 04:05:01,788 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 04:05:01,862 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 04:06:08,745 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 04:06:09,773 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 04:06:09,802 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 04:06:09,802 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 04:06:10,636 - network-attack-classifier - INFO - Prediction: DoS GoldenEye with confidence 0.3634, request_id: 1744670169826--632716254539331527
+2025-04-15 04:09:00,915 - network-attack-classifier - INFO - Shutting down application
+2025-04-15 04:09:00,969 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-15.csv
+2025-04-15 11:43:54,616 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-15 11:43:54,930 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-15 11:43:54,954 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-15 11:43:54,954 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-15 21:11:28,570 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-15 21:23:18,884 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 23:09:06,156 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 23:14:18,940 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 23:19:28,991 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 23:24:38,938 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 23:29:48,847 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 23:34:58,920 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-15 23:40:08,966 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 18:26:16,230 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-16 18:26:16,628 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-16 18:26:16,654 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-16 18:26:16,654 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-16 18:27:15,016 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 18:28:46,798 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 18:28:46,798 - network-attack-classifier - INFO - Prediction: DoS Hulk with confidence 0.3797, request_id: 1744808326718--5484798311680634381
+2025-04-16 18:28:50,454 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 18:29:43,733 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 18:29:43,733 - network-attack-classifier - INFO - Prediction: DoS Hulk with confidence 0.3797, request_id: 1744808383639--4229044425586384728
+2025-04-16 18:29:45,529 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 18:35:25,524 - network-attack-classifier - INFO - Shutting down application
+2025-04-16 18:35:25,556 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 18:35:39,958 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-16 18:35:40,596 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-16 18:35:40,622 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-16 18:35:40,624 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-16 18:35:40,677 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 18:39:30,713 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 18:40:18,605 - network-attack-classifier - INFO - Starting attack simulation 1a7d66a7-aa28-44d8-835b-1109486a881b, requested type: DoS Hulk
+2025-04-16 18:40:19,359 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 18:40:34,031 - network-attack-classifier - INFO - Starting attack simulation d668b045-d8ea-46ed-aa67-5ef56fef5e70, requested type: DoS Hulk
+2025-04-16 18:40:40,099 - network-attack-classifier - INFO - Starting attack simulation 840f3c0e-172e-411a-a635-ebc217c21853, requested type: DoS Hulk
+2025-04-16 18:40:45,354 - network-attack-classifier - INFO - Starting attack simulation 1de98d19-abb9-462c-95ce-7c7948b5fb0b, requested type: DoS Hulk
+2025-04-16 18:40:57,197 - network-attack-classifier - INFO - Starting attack simulation 91c9dd10-0692-4265-9eb8-4b2f21cdf864, requested type: DoS Hulk
+2025-04-16 18:41:21,132 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.5355, request_id: 1744809081040--1760527255669283333
+2025-04-16 18:41:40,982 - network-attack-classifier - INFO - Prediction: DoS GoldenEye with confidence 0.3634, request_id: 1744809100900-4284015579770740626
+2025-04-16 18:47:05,905 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 18:47:46,069 - network-attack-classifier - INFO - Shutting down application
+2025-04-16 18:47:46,085 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 18:47:57,049 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-16 18:47:57,408 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-16 18:47:57,418 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-16 18:47:57,418 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-16 18:48:28,706 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 18:52:48,516 - network-attack-classifier - INFO - Shutting down application
+2025-04-16 18:52:48,539 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 18:52:57,543 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-16 18:52:57,791 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-16 18:52:57,815 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-16 18:52:57,819 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-16 18:53:29,785 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 18:56:13,620 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 18:56:13,620 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9242, request_id: 1744809972546--507870966055832965
+2025-04-16 18:56:14,954 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 18:59:59,837 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 19:00:05,670 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 19:00:05,670 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9244, request_id: 1744810205263--2751098884135211569
+2025-04-16 19:00:26,494 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9242, request_id: 1744810226408--507870966055832965
+2025-04-16 19:00:52,617 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9391, request_id: 1744810252527--7845550355716817793
+2025-04-16 19:01:10,137 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.6175, request_id: 1744810270036-1997426478670698630
+2025-04-16 19:01:28,886 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9963, request_id: 1744810288821--5237710322048930061
+2025-04-16 19:02:08,551 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9242, request_id: 1744810328471--1563090694055506589
+2025-04-16 19:02:21,250 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9795, request_id: 1744810341189-2039450414610198414
+2025-04-16 19:02:38,350 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.6924, request_id: 1744810358250--7774009389534368732
+2025-04-16 19:02:52,836 - network-attack-classifier - INFO - Prediction: DoS Hulk with confidence 0.3797, request_id: 1744810372721-8862419633836137539
+2025-04-16 19:16:38,789 - network-attack-classifier - INFO - Shutting down application
+2025-04-16 19:16:38,814 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 19:16:52,782 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-16 19:16:53,201 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-16 19:16:53,220 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-16 19:16:53,221 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-16 19:18:15,811 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 19:18:36,055 - network-attack-classifier - INFO - Starting attack simulation 5f23a1f4-8d7e-4d44-abbe-a50955842e6e, requested type: DoS Hulk
+2025-04-16 19:18:36,964 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 19:18:40,854 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 19:18:43,132 - network-attack-classifier - INFO - Starting attack simulation 81209666-7a50-4528-ad64-bd39824c0aa1, requested type: DoS Hulk
+2025-04-16 19:18:43,259 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 19:18:45,870 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 19:18:48,230 - network-attack-classifier - INFO - Starting attack simulation 785e9a50-fc1c-4126-8fbc-f94e010944e4, requested type: DoS Hulk
+2025-04-16 19:18:48,334 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 19:18:50,893 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:07:56,245 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 20:07:56,261 - network-attack-classifier - INFO - Prediction: DoS GoldenEye with confidence 0.3634, request_id: 1744814275461--8986683584679502935
+2025-04-16 20:07:58,705 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:15:17,230 - network-attack-classifier - INFO - Shutting down application
+2025-04-16 20:15:17,242 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 20:15:38,411 - network-attack-classifier - INFO - Loading model from model.h5
+2025-04-16 20:15:38,722 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-04-16 20:15:38,738 - network-attack-classifier - INFO - Model loaded successfully
+2025-04-16 20:15:38,738 - network-attack-classifier - WARNING - Scaler file scaler.json not found. Scaling will be skipped.
+2025-04-16 20:15:38,765 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:17:03,617 - network-attack-classifier - INFO - Starting attack simulation 8c348b43-d38a-41a0-816d-910d69e05c3d, requested type: DoS GoldenEye
+2025-04-16 20:17:04,497 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 20:17:09,498 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:24:25,111 - network-attack-classifier - INFO - Starting attack simulation 418d8b82-6e17-4790-840e-1fdc8bc6835f, requested type: DoS GoldenEye
+2025-04-16 20:24:25,741 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 20:24:29,807 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:24:58,122 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 20:24:58,122 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9978, request_id: 1744815298021-8934105030669326986
+2025-04-16 20:24:59,824 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:28:32,679 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 20:28:32,680 - network-attack-classifier - INFO - Prediction: BENIGN with confidence 0.9978, request_id: 1744815512543-8934105030669326986
+2025-04-16 20:28:35,022 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:43:02,644 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 20:43:02,645 - network-attack-classifier - INFO - Prediction: DoS GoldenEye with confidence 0.3634, request_id: 1744816382065-6736432794493512259
+2025-04-16 20:43:05,620 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:46:13,274 - network-attack-classifier - INFO - Request history saved to logs\requests_2025-04-16.csv
+2025-04-16 20:46:13,274 - network-attack-classifier - INFO - Prediction: DoS Hulk with confidence 0.4252, request_id: 1744816573105-334665526955823960
+2025-04-16 20:46:15,755 - network-attack-classifier - INFO - Loaded 100 historical records from CSV files
+2025-04-16 20:50:41,385 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 20:55:55,883 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:01:05,808 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:06:15,822 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:11:25,758 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:16:35,858 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:21:45,863 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:26:55,855 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:32:05,800 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:37:15,851 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:42:25,818 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:47:35,834 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:52:45,786 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 21:57:55,803 - network-attack-classifier - ERROR - Error sending message to WebSocket: 
+2025-04-16 22:03:05,821 - network-attack-classifier - ERROR - Error sending message to WebSocket: 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Attack Monitoring Dashboard</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Network Attack Monitoring Dashboard</h1>
+    </header>
+    
+    <div class="container">
+        <div class="status-bar">
+            <div class="status-item">
+                <div id="connection-status-indicator" class="status-indicator disconnected"></div>
+                <span>WebSocket: <span id="connection-status">Disconnected</span></span>
+            </div>
+            <div class="status-item" id="current-time"></div>
+        </div>
+        
+        <div id="alerts-container">
+            <!-- Alerts will be dynamically inserted here -->
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-label">Total Requests</div>
+                <div class="stat-value" id="total-requests">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Benign Traffic</div>
+                <div class="stat-value" id="benign-percentage">0%</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Avg. Confidence</div>
+                <div class="stat-value" id="avg-confidence">0%</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Avg. Response Time</div>
+                <div class="stat-value" id="avg-response-time">0 ms</div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">Live Traffic</div>
+                    <div class="chart-container">
+                        <canvas id="traffic-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">Attack Distribution</div>
+                    <div class="chart-container">
+                        <canvas id="attack-distribution-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">Traffic by Hour of Day</div>
+                    <div class="chart-container">
+                        <canvas id="hourly-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">Recent Attacks</div>
+                    <div class="attack-list" id="attack-list">
+                        <div class="attack-item">No recent attacks detected</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">Top Source IPs</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>IP Address</th>
+                        <th>Request Count</th>
+                    </tr>
+                </thead>
+                <tbody id="ip-table-body">
+                    <!-- Table rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

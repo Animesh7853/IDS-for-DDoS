@@ -1,0 +1,40 @@
+#pip install -r requirements.txt
+# Core dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.23.2
+tensorflow==2.15.0
+numpy==1.24.3
+pydantic>=1.10.7
+
+# API enhancements
+python-multipart==0.0.6
+pydantic-settings>=2.0.3
+email-validator>=2.0.0
+
+# Security
+python-jose[cryptography]>=3.3.0
+passlib>=1.7.4
+bcrypt>=4.0.1
+
+# Data handling
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Monitoring and performance
+prometheus-client>=0.17.0
+opentelemetry-api>=1.18.0
+opentelemetry-sdk>=1.18.0
+
+# Development and testing
+pytest>=7.3.1
+httpx>=0.24.0
+pytest-cov>=4.1.0
+black>=23.3.0
+isort>=5.12.0
+flake8>=6.0.0
+
+# Deployment
+gunicorn>=21.2.0
+
+# WebSocket support
+websockets==11.0.3
