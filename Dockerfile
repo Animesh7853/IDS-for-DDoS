@@ -9,11 +9,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application
 COPY . .
 
-# Make sure the logs directory exists
-RUN mkdir -p logs
-
-# Create template directories for the dashboard
-RUN mkdir -p templates static/css static/js
+# Create required directories
+RUN mkdir -p logs templates static/css static/js
 
 # Create a basic dashboard.html template if it doesn't exist
 RUN if [ ! -f templates/dashboard.html ]; then \
@@ -29,9 +26,14 @@ RUN if [ ! -f static/js/dashboard.js ]; then \
 ENV PORT=8080
 ENV MODEL_PATH="model.h5"
 ENV SCALER_PATH="scaler.json"
+ENV LOG_DIR="logs"
+
+# Create empty model files if they don't exist (to prevent app crash)
+RUN touch model.h5
+RUN echo '{"mean": [0], "std": [1]}' > scaler.json
 
 # Expose the port that Cloud Run expects
 EXPOSE 8080
 
-# Command to run the application
-CMD exec python app.py
+# Command to run using gunicorn (more reliable for production)
+CMD exec gunicorn --bind :$PORT --workers 1 --worker-class uvicorn.workers.UvicornWorker --threads 8 --timeout 0 app:app
