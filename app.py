@@ -1498,11 +1498,17 @@ async def get_dashboard(request: Request):
 
 if __name__ == "__main__":
     import uvicorn
+    import os
     
-    print("""
+    # Get port from environment variable for Cloud Run compatibility
+    port = int(os.environ.get("PORT", 8000))
+    
+    print(f"""
     =====================================================
     Network Attack Monitoring Dashboard
     =====================================================
+    
+    Starting server on port: {port}
     
     Before running this application, make sure you have the 
     necessary dependencies installed:
@@ -1513,7 +1519,7 @@ if __name__ == "__main__":
     
     pip install websockets
     
-    Then access the dashboard at: http://localhost:8000/dashboard
+    Then access the dashboard at: http://localhost:{port}/dashboard
     =====================================================
     """)
     
@@ -1521,7 +1527,6 @@ if __name__ == "__main__":
     uvicorn.run(
         "app:app", 
         host="0.0.0.0", 
-        port=8000, 
-        reload=True, 
+        port=port, 
         log_level="info"
     )
