@@ -287,6 +287,7 @@ class ConnectionManager:
                 if self.active_connections:
                     # Prepare traffic data
                     stats = await get_traffic_stats_for_ws()
+                    # Convert dictionary to JSON string before sending
                     await self.broadcast(json.dumps(stats))
             except Exception as e:
                 logger.error(f"Error in broadcast task: {e}")
@@ -990,10 +991,45 @@ def get_dos_goldeneye_samples():
     
     return goldeneye_samples
 
+def get_dos_slowhttptest_samples():
+    """Return pre-generated DoS Slowhttptest samples that are guaranteed to be recognized correctly"""
+    
+    # These are the exact samples provided that are known to be classified correctly
+    samples = [
+        # Original sample 1 - unchanged
+        [0.0012216165040389, 0.0884044000643359, 1.961341950162301e-05, 0.0003398393849572, 
+         0.0167602431499176, 0.0, 0.0179276434146128, 0.1804915514592933, 0.0, 0.0057638671914586, 
+         0.4000001696748363, 0.0110505571155327, 0.0290090101712156, 2.3407340108407507e-07, 
+         2.124506461660033e-06, 0.0883333333333333, 0.0294680911958533, 0.0371078318770418, 
+         7.100426115337176e-06, 0.0, 0.0, 0.0, 0.0, 1.8852759581407854e-07, 0.0, 0.0, 0.0, 1.0, 
+         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4455718994140625, 0.00360107421875, 
+         0.5409836065573771, 8.661399452475777e-06, 0.0, 8.24895185950074e-06, 8.661399452475777e-06, 0.0],
+        
+        # Original sample 2 - unchanged
+        [0.0012216165040389, 0.1379957053489695, 3.8591338051562726e-05, 0.0002636451593176, 
+         0.0130024863834348, 0.0, 0.007859017127753, 0.5214541730670763, 0.0, 0.0057640355082996, 
+         0.4000001675163315, 0.0107292625521929, 0.0401030610810916, 2.2097588617877426e-07, 
+         3.146218040405903e-07, 0.1382253288874265, 0.0344987147435625, 0.0660756437416333, 
+         1.5748519551022162e-06, 0.0, 0.0, 0.0, 0.0, 1.5097123432967476e-07, 0.0, 0.0, 0.0, 1.0, 
+         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4455718994140625, 0.00360107421875, 
+         0.5409836065573771, 1.3564552312208414e-05, 0.0, 1.29186212497223e-05, 1.3564552312208414e-05, 0.0],
+        
+        # Original sample 3 - unchanged
+        [0.0012216165040389, 0.0988884206335267, 3.432348412784027e-05, 0.0002566626796693, 
+         0.0126581235406504, 0.0, 0.0084623744381661, 0.2990271377368151, 0.0, 0.0057641722970563, 
+         0.40000021910554, 0.0082407092208296, 0.0276251689467134, 3.7128677406168203e-07, 
+         1.0968282117462491e-06, 0.098642652161606, 0.0247220005491395, 0.0423179880147672, 
+         7.510572383772901e-07, 0.0, 0.0, 0.0, 0.0, 2.106784039067191e-07, 0.0, 0.0, 0.0, 1.0, 
+         0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4455718994140625, 0.00360107421875, 
+         0.5409836065573771, 8.152262815542111e-06, 0.0, 7.76405982432582e-06, 8.152262815542111e-06, 0.0]
+    ]
+    
+    return samples
+
 # Modify the generate_attack_features function to use these pre-generated samples
 def generate_attack_features(attack_type: str) -> Dict[str, float]:
     """Generate realistic network flow features based on attack type"""
-    # Use pre-generated samples for DoS Hulk
+    # Use pre-generated samples for DoS Hulk, DoS GoldenEye, or DoS Slowhttptest
     if attack_type == "DoS Hulk":
         # Get guaranteed Hulk samples
         hulk_samples = get_dos_hulk_samples()
@@ -1007,12 +1043,24 @@ def generate_attack_features(attack_type: str) -> Dict[str, float]:
         
         return features
     
-    # Use pre-generated samples for DoS GoldenEye
-    if attack_type == "DoS GoldenEye":
+    elif attack_type == "DoS GoldenEye":
         # Get guaranteed GoldenEye samples
         goldeneye_samples = get_dos_goldeneye_samples()
         # Pick a random sample
         selected_sample = random.choice(goldeneye_samples)
+        
+        # Convert to dictionary format using FEATURES list
+        features = {}
+        for i, feature_name in enumerate(FEATURES):
+            features[feature_name] = selected_sample[i]
+        
+        return features
+    
+    elif attack_type == "DoS Slowhttptest":  # Use exact spelling from your model
+        # Get the pre-generated samples
+        slowhttptest_samples = get_dos_slowhttptest_samples()
+        # Pick a random sample without any modification
+        selected_sample = random.choice(slowhttptest_samples)
         
         # Convert to dictionary format using FEATURES list
         features = {}
@@ -1473,6 +1521,7 @@ async def websocket_endpoint(websocket: WebSocket):
     try:
         # Send initial statistics
         initial_stats = await get_traffic_stats_for_ws()
+        # Convert dictionary to JSON string before sending
         await websocket.send_text(json.dumps(initial_stats))
         
         # Keep the connection open and handle messages
